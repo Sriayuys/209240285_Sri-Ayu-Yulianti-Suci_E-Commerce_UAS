@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kategori - ipong.sport</title>
+  <link rel="stylesheet" href="stylecss.css" />
+  <!-- Gaya tambahan untuk efek hover pada tombol kategori -->
+   <style>
+    /* Tambahan gaya untuk efek hover */
+    .kategori-list button {
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .kategori-list button:hover {
+      transform: scale(1.05);
+      background-color: #ffdd57;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ipong.sport</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="kategori.html">Kategori</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="cart-icon">🛒</div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <!-- Judul daftar kategori produk -->
+      <h2>Kategori Produk</h2>
+      <ul class="kategori-list">
+        <li><a href="Dewasa.html"><button onclick="tampilkanPesan('Sepatu Bola Dewasa')">Sepatu Bola Dewasa</button></a></li>
+        <li><a href="junior.html"><button onclick="tampilkanPesan('Sepatu Bola Junior')">Sepatu Bola Junior</button></a></li>
+        <li><a href="run.html"><button onclick="tampilkanPesan('Sepatu Running')">Sepatu Running</button></a></li>
+        <li><a href="apparel.html"><button onclick="tampilkanPesan('Apparel')">Apparel</button></a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 ipong.sport</p>
+  </footer>
+</body>
+</html>
